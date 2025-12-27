@@ -1,4 +1,7 @@
 import {
+  AfterInsert,
+  AfterRemove,
+  AfterUpdate,
   Entity,
   Column,
   PrimaryGeneratedColumn
@@ -14,4 +17,21 @@ export class User {
 
     @Column()
     password:string;
+
+    /** Hooks: */
+    @AfterInsert()
+    logInsert() {
+      console.log('Inserted user with ID:', this.id)
+    }
+
+    @AfterRemove()
+    logRemove() {
+      console.log('removed user with ID:', this.id)
+    }
+
+
+    @AfterUpdate()
+    logUpdate() {
+      console.log('Updated user with ID:', this.id)
+    }
 }
