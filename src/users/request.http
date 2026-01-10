@@ -7,6 +7,14 @@ Content-Type: application/json
   "password": "12345"
 }
 
+### Signin User request
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "12345"
+}
 
 
 ### Find a particular user with a given id
@@ -29,5 +37,10 @@ Content-Type: application/json
 ### Remove a particular user with a given id
 DELETE  http://localhost:3000/auth/{{id}}
 
+### Who am I
+Get http://localhost:3000/auth/whoami
+Content-Type: application/json
 
-
+### Signout User request
+POST http://localhost:3000/auth/signout
+Content-Type: application/json
