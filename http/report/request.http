@@ -10,19 +10,23 @@ Content-Type: application/json
   "make": "Toyota",
   "model": "Corolla",
   "year": 2020,
-  "mileage": 15000,
+  "mileage": 16000,
   "price": 20000,
   "lng": 0,
   "lat": 0
 }
 
-### 2. Update report
+### 2. Get report
 #### Request
-PATCH {{url}}/reports/1
+GET {{url}}/reports/2
+
+### 3. Update report
+#### Request
+PATCH {{url}}/reports/1/approve
 Content-Type: application/json
 
 {
-  "price": 19000
+  "approved": true
 }
 
 ### 3. Get estimate
