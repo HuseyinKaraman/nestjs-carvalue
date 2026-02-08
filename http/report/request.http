@@ -9,7 +9,7 @@ Content-Type: application/json
 {
   "make": "Toyota",
   "model": "Corolla",
-  "year": 2020,
+  "year": 1980,
   "mileage": 16000,
   "price": 20000,
   "lng": 0,
@@ -31,7 +31,7 @@ Content-Type: application/json
 
 ### 3. Get estimate
 #### Request
-GET {{url}}/reports/estimate?make=Toyota&model=Corolla&year=2020&latitude=34.0522&longitude=-118.2437&mileage=15000
+GET {{url}}/reports/estimate?make=hyundai&model=i30&year=1984&lat=15&lng=15&mileage=10000
 
 ### 4. Delete report
 #### Request
